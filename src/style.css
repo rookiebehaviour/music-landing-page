@@ -19,7 +19,7 @@ header {
 header h1 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  font-size: 171px;
+  font-size: 128px;
   line-height: 1.5;
   margin: 0;
 }
@@ -37,25 +37,27 @@ header h3 {
   font-size: 24px;
   font-weight: 900;
   line-height: 1.5;
+  letter-spacing: 5px;
   margin: 0;
 }
 
-.button {
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  font-weight: 600;
-  background: #885df1;
-  color: #fff;
-  padding: 16px 32px;
-  margin: 36px 0 5px 0;
-  border-radius: 100px;
-  text-decoration: none;
+section {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-section {
-  max-width: 1200px;
-  margin: 0 auto;
+section.songs {
+  background-image: linear-gradient(rgba(2, 4, 3, 0.8), rgba(2, 4, 3, 0.8)),
+    url("../src/images/beyonce-songs-sec-photo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px;
+}
+
+section.songs h2,
+section.songs h3 {
+  text-align: center;
 }
 
 main {
@@ -83,6 +85,23 @@ main h3 {
   padding-top: 10px;
 }
 
+main h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+}
+
+main h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+  margin: 10px 0;
+}
+
 main p {
   opacity: 70%;
   margin: 0;
@@ -107,7 +126,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0;
+  padding: 100px;
 }
 
 footer a {
@@ -116,7 +135,7 @@ footer a {
 }
 
 footer a:hover {
-  text-decoration: underline;
+  color: #885df1;
 }
 
 footer h3 {
@@ -143,6 +162,19 @@ footer p {
   margin: 0 auto;
 }
 
+.button {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  background: #885df1;
+  color: #fff;
+  padding: 16px 32px;
+  margin: 36px 0 5px 0;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
 .img-responsive {
   max-width: 100%;
 }
@@ -156,22 +188,47 @@ footer p {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-songs {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-footer {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 30px 0;
+  color: #000;
+}
+
+.card p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.card .button {
+  display: block;
+}
+
 @media (max-width: 960px) {
   header {
-    padding: 30px;
+    padding: 30px 10px;
   }
 
   header h1 {
     font-size: 40px;
-    padding-bottom: 25px;
+    padding: 25px 10px;
   }
 
   header h2 {
     font-size: 20px;
+    padding: 30px 10px;
   }
 
   header h3 {
@@ -183,24 +240,35 @@ footer p {
     padding: 12px 20px;
   }
 
+  header .button {
+    margin: 200px 0;
+  }
+
+  .grid-main {
+    grid-template-columns: 1fr;
+    padding: 0 20px 0 10px;
+    letter-spacing: 1px;
+  }
+
   footer {
-    font-size: 14px;
+    font-size: 15px;
     padding: 30px;
   }
 
   footer h3 {
-    font-size: 18px;
+    font-size: 30px;
   }
 
   footer a {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   footer p {
-    font-size: 13px;
+    font-size: 15px;
+    letter-spacing: 1px;
   }
 
-  .grid .grid-footer {
+  .grid-footer {
     grid-template-columns: 1fr;
     gap: 0;
   }
