@@ -4,6 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: rgba(2, 4, 3, 0.9);
   color: #fff;
+  margin: 0;
 }
 
 header {
@@ -20,7 +21,7 @@ header h1 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 128px;
-  line-height: 1.5;
+  line-height: 1;
   margin: 0;
 }
 
@@ -29,6 +30,7 @@ header h2 {
   font-size: 40px;
   font-weight: 400;
   line-height: 1.5;
+  padding-top: 40px;
   margin: 0;
 }
 
@@ -36,7 +38,7 @@ header h3 {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 900;
-  line-height: 1.5;
+  line-height: 1;
   letter-spacing: 5px;
   margin: 0;
 }
@@ -240,14 +242,66 @@ section.more-songs h3 {
 
   header h1 {
     font-size: 45px;
+    margin-bottom: 20px;
   }
 
   header h2 {
-    font-size: 30px;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 1;
+  }
+
+  header h3,
+  .grid-main h3,
+  .grid-songs h3,
+  .grid-videos h3 {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  main h4 {
+    font-size: 18px;
+  }
+
+  section.songs h2,
+  section.more-songs h2,
+  section.grid-main h2 {
+    font-size: 25px;
+  }
+
+  header .button {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+  }
+
+  div.main-content {
+    padding: 15px;
+  }
+
+  section.grid-main img {
+    padding: 0;
+  }
+
+  section.songs,
+  section.more-songs {
+    padding: 10px;
+  }
+
+  footer {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  footer h3 {
+    font-size: 24px;
   }
 
   .grid {
     gap: 2px;
+  }
+
+  .grid-main h2 {
+    font-size: 25px;
   }
 
   .grid-main,
@@ -255,7 +309,7 @@ section.more-songs h3 {
   .grid-songs,
   .grid-footer {
     grid-template-columns: 1fr;
-    padding: 5px;
-    margin: 10px 0;
+    padding: 0;
+    margin: 0;
   }
 }
