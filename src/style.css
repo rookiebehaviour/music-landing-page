@@ -60,6 +60,10 @@ section.songs h3 {
   text-align: center;
 }
 
+section.more-songs {
+  padding: 100px;
+}
+
 main {
   display: inline-block;
 }
@@ -190,6 +194,14 @@ footer p {
 
 .grid-songs {
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.grid-videos {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 0 171px;
+  margin: 30px 0;
 }
 
 .grid-footer {
@@ -216,60 +228,34 @@ footer p {
   display: block;
 }
 
+section.more-songs h2,
+section.more-songs h3 {
+  text-align: center;
+}
+
 @media (max-width: 960px) {
   header {
-    padding: 30px 10px;
+    padding: 0;
   }
 
   header h1 {
-    font-size: 40px;
-    padding: 25px 10px;
+    font-size: 45px;
   }
 
   header h2 {
-    font-size: 20px;
-    padding: 30px 10px;
-  }
-
-  header h3 {
-    font-size: 18px;
-  }
-
-  header a {
-    font-size: 14px;
-    padding: 12px 20px;
-  }
-
-  header .button {
-    margin: 200px 0;
-  }
-
-  .grid-main {
-    grid-template-columns: 1fr;
-    padding: 0 20px 0 10px;
-    letter-spacing: 1px;
-  }
-
-  footer {
-    font-size: 15px;
-    padding: 30px;
-  }
-
-  footer h3 {
     font-size: 30px;
   }
 
-  footer a {
-    font-size: 16px;
+  .grid {
+    gap: 2px;
   }
 
-  footer p {
-    font-size: 15px;
-    letter-spacing: 1px;
-  }
-
+  .grid-main,
+  .grid-videos,
+  .grid-songs,
   .grid-footer {
     grid-template-columns: 1fr;
-    gap: 0;
+    padding: 5px;
+    margin: 10px 0;
   }
 }
