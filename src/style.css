@@ -14,7 +14,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 120px;
+  padding: 180px;
 }
 
 header h1 {
@@ -63,7 +63,7 @@ section.songs h3 {
 }
 
 section.more-songs {
-  padding: 100px;
+  padding: 80px;
 }
 
 main {
@@ -177,8 +177,17 @@ footer p {
   color: #fff;
   padding: 16px 32px;
   margin: 36px 0 5px 0;
+  border: 2px solid #885df1;
   border-radius: 100px;
   text-decoration: none;
+  transition: all 120ms ease-in-out;
+}
+
+.button:hover {
+  color: #000;
+  background: #fff;
+  padding: 16px 32px;
+  margin: 36px 0 5px 0;
 }
 
 .img-responsive {
@@ -246,7 +255,7 @@ section.more-songs h3 {
   }
 
   header h2 {
-    font-size: 20px;
+    font-size: 25px;
     padding: 10px;
     line-height: 1;
   }
@@ -294,6 +303,11 @@ section.more-songs h3 {
 
   footer h3 {
     font-size: 24px;
+  }
+
+  .card,
+  div.video {
+    margin: 10px;
   }
 
   .grid {
