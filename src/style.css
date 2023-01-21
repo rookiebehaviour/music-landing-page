@@ -14,7 +14,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header h1 {
@@ -51,6 +51,7 @@ header .button {
 
 section {
   max-width: 100%;
+
   margin: 0 auto;
 }
 
@@ -168,10 +169,46 @@ footer p {
   opacity: 0.8;
 }
 
+.fa-angles-down {
+  text-align: center;
+  animation: blinking 2s ease-in-out infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 100%;
+  }
+  20% {
+    opacity: 60%;
+    color: #885df1;
+  }
+  40% {
+    opacity: 30%;
+  }
+  60% {
+    opacity: 0%;
+    color: #875df1c7;
+  }
+  80% {
+    opacity: 30%;
+  }
+  100% {
+    opacity: 60%;
+    color: #875df1b9;
+  }
+}
+
 .container {
   display: block;
   max-width: 100%;
   margin: 0 auto;
+}
+
+.arrow-container {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
 }
 
 .primary-button {
@@ -264,7 +301,6 @@ section.more-songs h3 {
 
   header h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
   }
 
   header h2 {

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Landing Page by Jacqueline Mason</title>
     <link rel="stylesheet" href="/src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/d5fe845896.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -14,13 +18,14 @@
         <h1>BEYONCE</h1>
         <h2>American singer-songwriter and cultural icon</h2>
         <div class="primary-button">
-          <a href="https://www.beyonce.com/" target="_blank" class="button"
-            >Learn more</a
-          >
+          <a href="#main" class="button">Learn more</a>
+        </div>
+        <div class="arrow-container">
+          <i class="fa-solid fa-angles-down"></i>
         </div>
       </header>
       <main>
-        <section class="grid grid-main">
+        <section id="main" class="grid grid-main">
           <div>
             <img
               src="/src/images/beyonce-main-sec-photo.png"
@@ -47,12 +52,10 @@
               She has sold over 200 million records and is the most-awarded
               female artist of all time. You can call her Queen Bey!
             </p>
-            <a href="https://www.beyonce.com/" target="_blank" class="button"
-              >Learn more</a
-            >
+            <a href="#songs" class="button">Learn more</a>
           </div>
         </section>
-        <section class="songs">
+        <section id="songs" class="songs">
           <h3>SONGS</h3>
           <h2>My favorite songs by Beyonce</h2>
 
@@ -157,7 +160,7 @@
             </div>
           </div>
         </section>
-        <section class="more-songs">
+        <section id="more-songs" class="more-songs">
           <h3>MORE SONGS</h3>
           <h2>More songs by Beyonce</h2>
           <div class="grid grid-videos">
