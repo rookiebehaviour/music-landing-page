@@ -77,10 +77,6 @@ main {
   display: inline-block;
 }
 
-.main-content {
-  min-height: 100vh;
-}
-
 main h2 {
   font-family: "Playfair Display", serif;
   font-size: 48px;
@@ -133,7 +129,8 @@ li {
 }
 
 p {
-  font-size: 16px;
+  font-size: 1.2rem;
+
   line-height: 1.5;
 }
 
