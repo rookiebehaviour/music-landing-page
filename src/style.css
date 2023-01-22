@@ -77,6 +77,10 @@ main {
   display: inline-block;
 }
 
+.main-content {
+  min-height: 100vh;
+}
+
 main h2 {
   font-family: "Playfair Display", serif;
   font-size: 48px;
@@ -246,7 +250,7 @@ footer p {
 
 .grid {
   display: grid;
-  gap: 64px;
+  gap: 3rem;
 }
 
 .grid-main {
