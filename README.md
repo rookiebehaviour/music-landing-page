@@ -1,1 +1,3 @@
-# Music website![music-landing-page-snippet](https://user-images.githubusercontent.com/75797321/208772142-fa443747-80c9-4095-b5ba-06e97fe00d8e.png)
+# Music website
+
+![music-landing-page-500x263](https://user-images.githubusercontent.com/75797321/217975033-3934856f-7256-4a03-996d-1cb84353cec6.png)
